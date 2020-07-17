@@ -1,0 +1,19 @@
+body{
+    height: 100vh !important;
+}.modal-content {
+    padding: 10px;
+    border-radius: 10px !important;
+}
+.anim-elem{
+    /* animation: moving 1s  linear  infinity; */
+    animation-name: moving;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    animation-duration: 0.5s;
+    animation-direction: alternate-reverse;
+}
+
+@keyframes moving{
+    from{ transform: translateX(-30px)}
+    to{ transform: translateX(30px)}
+}

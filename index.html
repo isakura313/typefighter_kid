@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="ru"> 
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Тренажер печати</title>  
+   
+    <link rel="shortcut icon" href="keyboard.png" type="image/png">
+    <script src="js/code.js" defer></script>
+    <link rel="stylesheet" href="css/bulma.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<div class="modal">
+    <div class="modal-background has-background-link"></div>
+    <div class="modal-content has-background-white">
+        <h3 class="is-size-4"> Количество ошибок </h3>
+        <table class="table">
+            <thead>
+              <tr>
+                <th> Дата попытки</th>
+                <th> Количество ошибок </th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr class="target_error">
+            </tr>
+            </tbody>
+        </table>
+    <div>
+        <!-- сюда мы будем писать результаты -->
+  </div>
+    <button class="modal-close is-large" aria-label="close"></button>
+</div>
+</div>
+<body class="has-background-black-bis">
+
+    <section class="hero is-primary is-large">
+        <div class="hero-head container">
+            <h1 class="label is-size-3 has-text-white promo"> Тренажер печати 3000</h1>
+
+            <div class="error-panel is-hidden">
+                <h3 class="label is-size-4 has-text-link has-text-centered">Ошибки</h3>
+                <progress id="prog" class="progress is-danger" value="0" max="20"> </progress>
+            </div>
+        </div>
+        <div class="hero-body has-background-black-bis main-board">
+            <div id="columns">
+                <h3 class="label is-size-2 has-text-white  has-text-centered begin anim-elem ">Press Enter to Start Game</h3>
+                <div class="buttons columns is-half is-centered ">
+
+                    <!-- здесь у нас будет происходить основная отрисовка -->
+
+                </div>
+            </div>
+        </div>
+    </section>
+</body>
+</html>
