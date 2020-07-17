@@ -79,7 +79,7 @@ function StartGame(e) {
   }
   var all_try = 0;
   var errors_count = 0;
-  var count = 0;
+  var counts_right = 0;
 
   function press(e) {
     //получаем нагенерированный набор
