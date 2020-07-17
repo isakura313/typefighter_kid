@@ -79,6 +79,24 @@ function mainGame(){
   drawBoard(level_info)
   document.addEventListener("keydown", press)
 }
+var all_try = 0;
+var errors_count = 0;
+var count = 0;
+
+function press(e){
+  //получаем нагенерированный набор
+  //после этого, если нажатая клавиши совпадает с нулевым элементом
+  //удаляем его и прибавляем правильный ответ и играем звук и добавляем в общием попытки
+
+  let elements_arr = document.querySelectorAll(".game-button") // превращает в массив 
+  if(e.key == elements_arr[0].id){
+    elements_arr[0].remove()
+    counts_right++;
+    press_sound.play()
+    all_try++;
+  }
+
+}
 
 }
 
